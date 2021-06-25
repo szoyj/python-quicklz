@@ -462,9 +462,9 @@ initquicklz(void)
 {
 
     if (PyType_Ready(&QLZStateCompressType) < 0)
-        return NULL;
+        return ;
     if (PyType_Ready(&QLZStateDecompressType) < 0)
-        return NULL;
+        return ;
 
 #if PY_MAJOR_VERSION >= 3
     PyObject *module = PyModule_Create(&moduledef);
