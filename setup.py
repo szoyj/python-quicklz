@@ -1,4 +1,4 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 setup(
     name = "quicklz",
@@ -15,8 +15,8 @@ setup(
                "-O2",
                "-std=c99",
                "-Wall",
-               "-W",
-               "-Wundef",
+               # "-W",
+               # "-Wundef",
 #           try fortification
 #            "-DFORTIFY_SOURCE=2", "-fstack-protector",
 #           try hard CPU optimization
